@@ -1,4 +1,6 @@
 # MediWeb
+![MediWeb](https://github.com/sabrinafogel/MediWeb/blob/main/medi.png)
+
 A GraceHacks 2022 project, created by Sabrina Fogel, Regan Miller, and Sneha Yalavarti
 ## Inspiration
 Being someone who has been in a place of confusion and frustration after a medical diagnosis, I felt lost and miserable. I really wanted to have a place where I could read about other people like me and see how they are living their lives and managing their chronic illness. -Sneha Yalavarti
