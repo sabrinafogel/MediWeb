@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+  <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="discussions.html">Discussions</a>
+      <!-- <a href="communities.html">Communities</a> --> 
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+      <a class = "active" href="login.html">Log-In</a>
+    
+  </div>
+  <h4>Welcome to MediWeb!</h4> 
+  <h2>Please log in below:</h2>
+  <div class = "loginBox">
+    <div class = user_inputs>
+    
+    <loginText>Username:</loginText>
+    <input type="text" id = "uname" name = "uname" > 
+      <br><br>
+    <loginText>                                               
+                                                              
+                Password:</loginText>
+    <input type="password" id = "pass" name = "pass"> 
+    <br><br>
+    </div>
+    
+    <button class="button button1" onClick="login()" >Log In</button>
+    <script>
+      function login(){
+        var uname = document.getElementById("uname").value;
+        var pass = document.getElementById("pass").value;
+        if (uname && pass){ // will later check userbase for uname and pass
+          window.location = "index.html";
+  
+        }
+      }
+    </script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </div>
+  <br><br>
+  <h2>New to MediWeb? Sign up now!</h2>
+  <!--<button>Sign Up</button>
+  <script src="signup.js"></script>
+  //-->
+  <div class="signupBox">
+    <button class="button button2" onClick="signUp()" >Sign Up!</button>
+    <script>
+      function signUp(){
+        window.location = "signupPage.html";
+      }
+    </script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </div>
+
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

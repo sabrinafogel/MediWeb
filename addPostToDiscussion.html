@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class = "active" href="discussions.html">Discussions</a>
+      <a href="communities.html">Communities</a>
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Log-In</a>
+    </div>
+    <h4>Add Post to Discussion</h4>
+    <!--these are discussions the user has flagged-->
+    <text>Your Username:</text>
+    <br>
+    <input value= "Username" id="una">
+    <br><br>
+    <text>Post Title:</text>
+    <br>
+    <input id = "title">
+    <br><br>
+    <text>Tags:</text>
+    <br>
+    <input id = "tag">
+    <br><br>
+    <text>Message:</text>
+    <br>
+    <textarea id="newMess" name="newMess" rows="4" cols="50"></textarea>
+    <br><br>
+    <button class="button button1" onClick="addPo()" >Add Post</button>
+  <script src="addPost.js"></script>
+  </body>
+</html>

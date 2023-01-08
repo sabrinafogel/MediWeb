@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="discussions.html">Discussions</a>
+      <!-- <a href="communities.html">Communities</a> --> 
+      <a class = "active" href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Log-In</a>
+    </div>
+    <div class = Wmess> 
+      <h4>Conversation</h4>
+      <br><br>
+    <div class = "them"> Them: Hello, I was wondering if you would be interested in a support group. </pr><br><br></div>
+      
+        <input type = "text" id = "mess_in" name = "mess_in"></type>
+      
+       <button class="button button5" onClick="addmessage()">Send</button>
+     <!-- <button class="button5" onClick="addmessage()">Send</button>--> <br>
+
+  <script src="messaging.js"></script>
+    </div>
+
+    <div class ouputMess>
+      <script>
+          if(localStorage.getItem("post_mess") != null){
+              document.write(localStorage.getItem("post_mess"));
+          }
+        
+
+        </script>
+    </div>
+      
+
+    
+    
+  </body>

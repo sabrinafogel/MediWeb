@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class = "active" href="discussions.html">Discussions</a>
+     <!-- <a href="communities.html">Communities</a> --> 
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Log-In</a>
+    </div>
+   
+    <!--
+    <button class="button button4" onClick="addPost()" >Add New Discussion Post</button>
+  <script>
+    function addPost(){
+      window.location = "addPostToDiscussion.html";
+    }
+  </script>-->
+  <h4>My Discussions</h4>
+    <!--<button class="button button4" onClick="addPost()" >Add New Discussion Post</button>
+  <script>
+    function addPost(){
+      window.location = "addPostToDiscussion.html";
+    }
+  </script><br><br>-->
+  <!--these are discussions the user has flagged-->
+    <div class = "discussion_title">
+      <script>
+        if (localStorage.getItem("newPoTit") != null){
+          document.write(localStorage.getItem("newPoTit"));
+        }
+      </script>
+    </div>
+    <div class = "discussion_post">
+      <script>
+        if (localStorage.getItem("newPoMess") != null){
+          document.write(localStorage.getItem("newPoMess"));
+        }
+        else{
+          document.write("You haven't posted any discussions yet. Try posting something with the button below!");
+        }
+      </script>
+    </div>
+    <div class = "discussion_other">
+      <script>
+        if (localStorage.getItem("newPoUser") != null){
+          document.write("Posted by: " + localStorage.getItem("newPoUser"));
+          document.write("<br>")
+          document.write("Tags: " + localStorage.getItem("newPoTag"));
+        }
+      </script>
+    </div>
+    <button class="button button4" onClick="addPost()" >Add New Discussion Post</button>
+  <script>
+    function addPost(){
+      window.location = "addPostToDiscussion.html";
+    }
+  </script>
+     
+    <h4>All Discussions</h4>
+    <!--these are all discussions-->
+    <div class = "discussion_title">
+      <span>Type 1 Diabetes</span>
+    </div>
+    
+    <div class = "discussion_post">
+      <pr>  Hello I’m a 21 y/o named Aster and I was first diagnosed with Type 1 Diabetes when I was 14. I’m currently on novolog and Lantus. I use a Dexcom G6 for my blood glucose censors.</pr><br><br>
+      <pr>  I was looking if anyone had any experiences with the Omnipod pump? My endocrinologist has been trying to switch me over for months but I’m still not sure if I want to. Would love to hear some advice/experiences from anyone who’s tried it! Thanks (:</pr>
+    </div>
+    <div class = "discussion_other">
+      <span>Posted by: Asty_L</span><br>
+      <span>Tags: Type 1, Diabetes, Omnipod</span>
+    </div>
+      <br><br>
+    <div class = "discussion_title">
+      <span>A Letter to Crohn's Disease</span>
+    </div>
+    <div class = "discussion_post">
+      <pr>Hello fellow warriors!
+I am Sneha and I have been diagnosed with Crohn’s Disease 2 years ago and I here’s my letter I wrote to my disease: 
+Dear Crohn’s, 
+You came rushing into my life uninvited, you took a lot from me without my permission. 
+You broke me into pieces, without instructions to fix myself. 
+You left me with a lot of pain and clueless, when I did not ask you to. 
+But….
+You taught me a lot, things I never thought I would need to know. 
+You taught me to get back up, put myself together and made me resilient. 
+You taught me to believe in myself and to trust that all will be fine eventually though it might take some time.
+I can appreciate all the change you brought to my personality but I will always resent you a little. 
+Sincerely, 
+Sneha(your fellow Crohnie)</pr>
+    </div> 
+    <div class = "discussion_other">
+      <span>Posted by: Sneha_Yal</span><br>
+      <span>Tags: Crohn's, Personal</span>
+    </div>
+      <br><br>
+  </body>
+</html>
